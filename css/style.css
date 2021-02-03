@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*--------------------*/
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 25px 0px;
+}
+
+.navigation-link {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #939699;
+}
+
+.button {
+  padding: 11px 20px;
+  background-color: #4592FF;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-text {
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.button-price {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.slider {
+  position: relative;
+}
+
+.slide {
+  min-height: 568px;
+  padding: 90px 0px 110px 0px;
+}
+
+.slide-1 {
+  background-color: #B4D1E0;
+  background-image: url(../img/intro-image.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.slide-2 {
+  background-image: url(../img/intro-image.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: #b9e0b4;
+}
+
+.label {
+  padding: 5px 12px;
+  background-color: #3DC47E;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  border-radius: 3px;
+}
+
+.slide-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #262D33;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.slide-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4B5157;
+  margin-bottom: 40px;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9;
+}
+
+.slide-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card-button-icon {
+  margin-left: 5px;
+}
+
+.card {
+  min-height: 370px;
+  border-radius: 10px;
+  padding: 60px 46px 80px 46px;
+}
+
+.card-1 {
+  background: #E3E2E3 url(../img/card-image-1.png) no-repeat top right;
+  background-size: cover;
+}
+
+.card-2 {
+  background: #E3E2E3 url(../img/card-image-2.png) no-repeat top right;
+  background-size: cover;
+}
+
+.card-3 {
+  background: #CCD5E6 url(../img/card-image-3.png) no-repeat top right 10%;
+  background-size: contain;
+  padding-top: 35px;
+}
+
+.card-4 {
+  background: #FF4F52 url(../img/card-image-4.png) no-repeat top right;
+  background-size: contain;
+  padding-top: 35px;
+  padding-left: 25px;
+}
+
+.card-title {
+  max-width: 222px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+  margin-bottom: 15px;
+}
+
+.card-title.large {
+  max-width: 420px;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  max-width: 176px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  margin-bottom: 25px;
+}
+
+.card-text.large {
+  max-width: 320px;
+}
+
+.card-price {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.section-title {
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+}
+
+.more {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262D33;
+  padding: 10px;
+}
+
+.goods-card {
+  position: relative;
+  text-align: center;
+  padding: 30px 36px 35px 36px;
+}
+
+.goods-card .label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.goods-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: Roboto Slab;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262D33;
+}
+
+.goods-description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  margin-bottom: 20px;
+}
+
+.goods-price {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #262D33;
+}
+
+.footer {
+  background-color: #8F79D4;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  color: #FFFFFF;
+}
+
+.footer-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-menu-link {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #E7D9FF;
+}
+
+.social-link {
+  margin-left: 15px;
+}
+
+.footer-line {
+  height: 1px;
+  width: 100%;
+  background-color: #D8BFFF;
+}
+
+.payment-logo {
+  margin-right: 25px;
+}
+
+.top-link-text {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-right: 15px;
+}
+
+.top-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #D8BFFF;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .slide-1 {
+    background-size: cover;
+  }
+  .card-3 {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide-title {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+  .card {
+    padding: 30px;
+    min-height: 300px;
+    background-position: left top;
+  }
+  .card-4 {
+    background-position: right top;
+  }
+}
